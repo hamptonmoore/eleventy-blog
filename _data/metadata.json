@@ -1,15 +1,15 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Hampton Moore",
+  "url": "https://hampton.pw",
+  "description": "A small blog containing the ramblings of another human",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "subtitle": "A small blog containing the ramblings of another human",
+    "filename": "rss.xml",
+    "path": "/rss.xml",
+    "id": "https://hampton.pw/"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Hampton Moore",
+    "email": "hello@hampton.pw"
   }
 }
