@@ -2,8 +2,7 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
-[<a href="{{ '/' | url }}">Home</a> | <a href="{{ post.url }}">Standalone</a>]
-
+<h1 class="header">{{ title }}</h1>
+[<a href="{{ '/' | url }}">Home</a>]
+<hr>
 {{ content | safe }}
-
