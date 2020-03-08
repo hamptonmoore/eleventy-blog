@@ -14,4 +14,4 @@ I could have gotten it during the GoDaddy auction, but I refuse to pay GoDaddy m
 Regardless of the fact I now own hamptonmoore.com, hampton.pw will remain the main domain for my blog and all of my actions in the foreseeable future with hamptonmoore.com was just registered for future usage.
 I do see and acknowledge the irony of that previous statement and how it relates to my complaints on the previous usage of the domain.
 
-In the future when I move from my current home, where I can not port forward, and am finally able to refactor my whole setup the hamptonmoore.com will be for anything meant to be shown on a portfolio, with hampton.pw being for internal websites and non-polished creations.
+In the future when I move from my current home, where I can port forward, and am finally able to refactor my whole setup, the hamptonmoore.com will be for anything meant to be shown on a portfolio, with hampton.pw being for internal websites and non-polished creations.
