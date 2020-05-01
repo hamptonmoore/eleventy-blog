@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
   });
 
 
-  eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("resources");
   eleventyConfig.addPassthroughCopy("css");
 
   /* Markdown Overrides */
