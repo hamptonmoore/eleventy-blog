@@ -9,19 +9,21 @@ eleventyNavigation:
 	Hampton Moore
 </h1>
 <div class="navbar">
-	<a href="https://github.com/herohamp/" style="background-color:#ffc36d;">Github</a>
-	<a href="https://gist.github.com/herohamp" style="background-color:#fd6234;"> Gist</a>
-	<a href="https://twitter.com/herohamp_" style="background-color:#92436e;">Twitter</a>
-	<a href="./rss.xml" style="background-color:#26467a;margin-bottom:10px;">RSS</a>
+	<a href="https://github.com/herohamp/" style="background-color:#b9c189;">Github</a>
+	<a href="https://gist.github.com/herohamp" style="background-color:#e1c09a;"> Gist</a>
+	<a href="https://twitter.com/herohamp_" style="background-color:#ec8f90;">Twitter</a>
+	<a href="./rss.xml" style="background-color:#e1577a;margin-bottom:10px;">RSS</a>
 </div>
 <p>Welcome to a tiny spot on the internet, containing the ramblings of another human</p>
 <hr>
 {% set postslist = collections.posts %}
 {% set postslistCounter = collections.posts | length %}
-<ul>
+<ul style="padding: 0;list-style-type: none;">
 {% for post in postslist | reverse %}
   <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
     {{ post.date | readableDate }} &ndash; <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-  </li>
+    <br>
+    <span>{{ post.data.description }}</span>
+    <br><br>
 {% endfor %}
 </ul>
