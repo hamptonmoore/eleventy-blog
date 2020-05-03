@@ -1,6 +1,6 @@
 ---
 title: Shrinking this sites docker image
-description: How this sites docker image went from 419MB to 69.1MB
+description: How this sites docker image went from 419MB to 39MB
 date: 2020-05-03
 layout: layouts/post.njk
 ---
