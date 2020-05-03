@@ -10,10 +10,9 @@ WORKDIR /app
 COPY --from=npmpackages /app /app
 COPY . .
 RUN npm run build
-RUN rm -r /usr/share/nginx/html/
-RUN cp /app/_site/ /usr/share/nginx/html/ -r
 
 FROM nginx:1.17.10-alpine
+RUN rm -r /usr/share/nginx/html/
 COPY --from=builder /app/_site/ /usr/share/nginx/html/
 
 EXPOSE 80

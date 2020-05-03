@@ -106,3 +106,13 @@ p img {
 li span {
 	font-size: 18px;
 }
+
+pre code {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+	margin: 1em 0px;
+	background-color: #407174;
+	word-wrap: break-word;
+	padding: 8px;
+}
