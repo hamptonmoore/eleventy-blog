@@ -18,7 +18,7 @@ RUN rm -r /usr/share/nginx/html/
 RUN cp /app/_site/ /usr/share/nginx/html/ -r
 EXPOSE 80
 ``` 
-This docker image resulted in a 419MB final image according and took about 3 minutes to build. There are some obvious issues with this. For instance every-time I change any file it must go through and reinstall all of my node_modules. Secondly, I was installing Eleventy globally while at the same time installing it during the second npm install. 
+This docker image resulted in a 419MB final image and took about 3 minutes to build. There are some obvious issues with this. For instance every-time I change any file it must go through and reinstall all of my node_modules. Secondly, I was installing Eleventy globally while at the same time installing it during the second npm install. 
 
 ```
 FROM nginx:1.17.10-alpine as npmpackages
@@ -37,7 +37,7 @@ RUN rm -r /usr/share/nginx/html/
 RUN cp /app/_site/ /usr/share/nginx/html/ -r
 EXPOSE 80
 ```
-This build was segmented into two portions, at first it just copied the package.json and run npm install. This means that assuming that the package.json file did not change at all then after the first docker build it would cache the node_modules so that it did not have to install on each build. This shrunk the docker image down to 329MB, which was a little better, but still heavily bloated. After poking around in the docker image I saw the issue, I was keeping the /app folder even though it was not being used anymore.
+This build was segmented into two portions, at first it just copied the package.json and ran npm install. This means that assuming that the package.json file did not change at all then after the first docker build it would cache the node_modules so that it did not have to npm install on each build. This shrunk the docker image down to 329MB, which was a little better, but still heavily bloated. After poking around in the docker image I saw the issue, I was keeping the /app folder even though it was not being used after the _site folder was copied to the nginx serve directory.
 
 ```
 FROM nginx:1.17.10-alpine as npmpackages
