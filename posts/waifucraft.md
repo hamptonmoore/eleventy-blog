@@ -9,11 +9,11 @@ Recently my friend introduced me to [Waifu2x](https://github.com/nagadomi/waifu2
 
 This lead to some very interesting and weird results with the textures no longer tiling correctly. The textures also just had a lot of "creases" with sharp black squiggly lines going through the texture. Below are some reference images for how it looks. For those crazy enough to want to download this texture pack click [here](/resources/WaifuCraft/WaifuCraft.zip) to download it.
 
-![](/resources/WaifuCraft/WaifuCraft%20(1).png)
-![](/resources/WaifuCraft/WaifuCraft%20(4).png)
-![](/resources/WaifuCraft/WaifuCraft%20(5).png)
-![](/resources/WaifuCraft/WaifuCraft%20(7).png)
-![](/resources/WaifuCraft/WaifuCraft%20(11).png)
-![](/resources/WaifuCraft/WaifuCraft%20(15).png)
-![](/resources/WaifuCraft/WaifuCraft%20(18).png)
-![](/resources/WaifuCraft/WaifuCraft%20(19).png)
+![](/resources/WaifuCraft/WaifuCraft%20(1).jpg)
+![](/resources/WaifuCraft/WaifuCraft%20(4).jpg)
+![](/resources/WaifuCraft/WaifuCraft%20(5).jpg)
+![](/resources/WaifuCraft/WaifuCraft%20(7).jpg)
+![](/resources/WaifuCraft/WaifuCraft%20(11).jpg)
+![](/resources/WaifuCraft/WaifuCraft%20(15).jpg)
+![](/resources/WaifuCraft/WaifuCraft%20(18).jpg)
+![](/resources/WaifuCraft/WaifuCraft%20(19).jpg)
