@@ -1,7 +1,7 @@
 :root {
-	--text: #f2f1ef;
-	--link: #f2f1ef;
-	--link-hover: #f2f1ef;
+	--text: #E1E1E1;
+	--link: #9b57ff;
+	--link-hover: #9b57ff;
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
-	background-color: #73a4a7;
+	background-color: #191b25;
 	color: var(--text);
 	font-size: 24px;
 	font-family: Verdana, Geneva, sans-serif;
@@ -107,16 +107,15 @@ li span {
 }
 
 pre code {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
+	display: block;
+	font-family: monospace;
+	white-space: pre;
 	margin: 1em 0px;
 	background-color: #407174;
 	padding: 8px;
 	white-space: pre-wrap;       /* Since CSS 2.1 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
-
