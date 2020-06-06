@@ -1,6 +1,6 @@
 ---
 title: Fighting the event loop for speed
-description: Running lots of functions fast, while not completely taking up the event loop.
+description: Analyzing the different methods for running lots of functions fast, while not completely taking up the event loop to allow for rendering.
 date: 2020-03-16
 layout: layouts/post.njk
 ---

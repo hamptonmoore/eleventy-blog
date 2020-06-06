@@ -1,11 +1,11 @@
 ---
-title: Shrinking this sites docker image
-description: How this sites docker image went from 419MB to 39MB
+title: Shrinking this site's docker image
+description: How this site's docker image shrunk from 419MB of bloat and NPM modules to 39MB using Docker build layers
 date: 2020-05-03
 layout: layouts/post.njk
 ---
 
-Recently I moved my static [Eleventy](https://www.11ty.dev/) site over to a docker container. This was one of the first docker images I have made in a while so it started inefficient. 
+Recently, I moved my static [Eleventy](https://www.11ty.dev/) site over to a docker container. This was one of the first docker images I have made in a while so it started inefficient.
 ```
 FROM nginx:1.17.10-alpine
 RUN apk add --update nodejs npm
@@ -17,8 +17,8 @@ RUN eleventy .
 RUN rm -r /usr/share/nginx/html/
 RUN cp /app/_site/ /usr/share/nginx/html/ -r
 EXPOSE 80
-``` 
-This docker image resulted in a 419MB final image and took about 3 minutes to build. There are some obvious issues with this. For instance every-time I change any file it must go through and reinstall all of my node_modules. Secondly, I was installing Eleventy globally while at the same time installing it during the second npm install. 
+```
+This docker image resulted in a 419MB final image and took about 3 minutes to build. There are some obvious issues with this. For instance every-time I change any file it must go through and reinstall all of my node_modules. Secondly, I was installing Eleventy globally while at the same time installing it during the second npm install.
 
 ```
 FROM nginx:1.17.10-alpine as npmpackages
@@ -64,6 +64,8 @@ This is the final image that I ended up with, note how the final layer does not 
 EDIT: After compression of all of the images and WaifuCraft resource pack the whole site is 19MB with the image being 39MB
 
 EDIT #2: After posting this on Hacker News I got quite a few suggestions, the main one being that since I am using build layers I should be using the node docker image instead of a modified nginx-alpine. I have taken that suggestion with the new Dockerfile looking this this.
+
+EDIT #3: The Waifucraft images and resources have been moved to an external CDN, with the final image now being 20MB, with 5.6MB coming from alpine, 14.3MB coming from nginx, and a whole 40KB coming from my site itself. Future plans include swapping out nginx without something less bloated like [Quark by Suckless](https://tools.suckless.org/quark/).
 ```
 FROM node:10-alpine3.9 as npmpackages
 WORKDIR /app

@@ -1,6 +1,6 @@
 ---
 title: WaifuCraft
-description: A texture pack made using Waifu2x
+description: Using the Waifu2x upscaling software to make the default minecraft resource pack higher definition automatically
 date: 2020-05-01
 layout: layouts/post.njk
 ---

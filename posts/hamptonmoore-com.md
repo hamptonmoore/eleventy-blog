@@ -1,6 +1,6 @@
 ---
 title: Finally acquired hamptonmoore.com
-description: After many years I have finally acquired hamptonmoore.com
+description: After many years I have finally acquired hamptonmoore.com and plan on slowly transitioning my services and sites over to hamptonmoore.com
 date: 2020-03-05
 layout: layouts/post.njk
 ---
